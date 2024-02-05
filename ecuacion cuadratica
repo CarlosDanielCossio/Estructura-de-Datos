@@ -1,0 +1,33 @@
+/*ecuacion cuadratica*/
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main()
+{
+    float a,b,c,r, x1,x2;
+    cout<<"Ingresa el valor de a: "<<endl;
+    cin>>a;
+    cout<<"Ingresa el valor de b: "<<endl;
+    cin>>b;
+    cout<<"Ingresa el valor de c: "<<endl;
+    cin>>c;
+    r=(b*b)-(4*a*c);
+    if(a==0)
+    {
+        cout<<"Indeterminado"<<endl;
+    }
+    else if(r<0)
+    {
+       cout<<"Imaginario"<<endl;
+    }
+    else if(r==0)
+    {
+        cout<<"La respuesta es x = "<<-b/2*a<<endl;
+    }
+    else if(r>0)
+    {
+        cout<<"Las respuestas son: "<<endl<<"x1 = "<<((-b)+(sqrt(r)))/2*a<<endl<<"x2 = "<<((-b)-(sqrt(r)))/2*a<<endl;
+
+    }
+    return 0;
+}
